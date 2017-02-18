@@ -1,0 +1,117 @@
+Programarea Calculatoarelor, seria CC
+Tema2 - Snake
+
+STUDENT : Gogea Mihail 314 CC
+Pentru compilare: make
+Pentru rulare: make run
+
+---------------------> README
+
+
+---------> Tema : Tema 2 SNAKE   Programarea Calculatoarelor 2014-2015
+
+---------> Autor : GOGEA MIHAIL
+
+---------> Grupa : 314 
+
+---------> Seria : CC
+
+---------> Timp de rezolvare a programului : 18-20 ore
+
+---------> Adresa de email : gogeaa712@yahoo.com 
+
+---------> Titlul temei : SNAKE
+
+-----------> IMPORTANT! : Programul Snake a fost implementat cu ajutorul
+			 editorului vim , pe sistemul de operare Linux
+			 UBUNTU 14 .
+			  Ca jocul sa fie vizualizat complet trebuie ca terminalul
+			 sa fie maximizat.
+			  Am introdus toate bucatile de program din folderul
+			 EXEMPLE in programul meu Snake , asa cum a fost precizat
+			 in enuntul temei, pornind de la snake.c .
+
+-----------> Bonusuri:
+		- Meniul principal prin care playerul poate sa aleaga daca doreste
+		 sa joace cu obstacole apasand tasta 1 , fara obstacole apasand 
+		 tasta 2 , sau daca doreste sa renunte la joc apasand tasta 'q'.
+   		  Meniului este colorat avand margini de culoare .
+ 		- Am introdus scoru. Pentru fiecare patratel de hrana mancat de 
+		 catre sarpe scorul creste , ca in final sa fie afisat scorul
+		 playerului . 
+		- Am introdus culori in joc
+		- Am colorat capul sarpelui alta culoare pentru ca sa fie mai usor
+		 de vizualizat care e capul sarpelui pe unde se deplaseaza.
+		- Am introdus simboluri si caractere speciale(NCURSES) pentru a desena
+		 marginea jocului , mancarea(DIAMOND) si pentru a desena sarpele.
+
+---------------> Am implementat toate cerintele din enunt si am testat programul.
+		
+                
+
+---------------> Descriere a codului sursa a programului snake.c :
+
+---* Pentru o descriere mai detaliata a fiecarei functii , a se 
+    vizualiza codul sursa a programului snake.c in comentariile 
+    scrise deasupra fiecare functii.
+
+	Am introdus la inceput toate bibloteciile necesare programului : stdio.h,
+ctype.h, sys/select.h, time.h , si am definit cateva constante care imi vor 
+trebui pe parcursul programului.
+	Am construit 3 structuri cu denumirile sarpe, obstacol , hrana pentru a
+retine coordonatele sarpelui , obstcolului si a mancarii pe coloane si pe randuri.
+	Prima functie chenar_meniu1 este pentru meniul ce va aparea la inceput, iar
+functiile for sunt pentru a desena chenarul meniului si pentru a introduce simbolurile
+(patrate) pentru a se vizualiza meniu. Aici am folosit functiile attron si attroff 
+pentru a activa si a dezactiva culoarea si functia addch pentru a insera simbolul.
+Ambele functii apartin biblotecii NCURSES . Liniile meniului cu propozitiile le-am
+introdus cu functia mvaddstr avand parametrii linia , coloana si fraza pe care o 
+doresc sa o introduc.
+	Functia paleta_culori( apartinand biblotecii ncurses) este pentru a definii 
+culorile de care am nevoie pe parcursul programului , dandu-le cate un numar
+fiecaruia.
+	Functia chenar_joc este pentru a desena chenarul jocului , cu functiile 
+for am initializat chenarul.
+	Functia sarpe_initial este pentru a desena sarpele initial ce este format
+din 5 patratele , dar aici pentru capul sarpelui am dat o alta culoare fata de 
+restul corpului.	
+	Functia introducere_obstacole , introduce obstacole in numar de 15 , iar 
+functia while din interior este pentru a le introduce in interiorul chenarului.
+Aici am introdus niste conditii pentru ca obstacolul sa nu cada pe sarpe, pe chenar
+sau in afara chenarului.Am m-ai folosit functia random ca sa imi introduca
+numere aleatorii si le-am impartit la 29 si 59 pentru a nu iesi din chenarul
+jocului.
+	Functia introducere_mancare e pentru a adauga cate un cub de mancare de
+culoare rosie random se aseamana cu functia introducere_obstacole 
+	In int main am initializat caracterul c cu litera 'd' ca sarpele 
+intial sa mearga spre dreapta.
+	Start_color() este pentru a incepe functia de culoare.
+	Am citit cu getchar() in variabila c tasta pe care o tasteaza
+playerul ca sa pot stie ce a ales ( cu obstacole , fara obstacole sau doreste sa 
+iasa din joc) si am implementat un if sa stiu ce ramura urmez.
+	timeout.tv_sec = 1 este pentru ca sarpele sa astepte 1 secunda inainte
+de a incepe sa mearga .
+	Cu while de la linia 373 este pentru a introduce scorul , de fiecare
+data cand sarpele mananca un cubulet de mancare scorul creste , ca la final 
+sa ii fie aratat playerului scorul sau.
+	Am introdus si o functie if ca jucatorul sa poata apasa doar tastele
+'w a s d q ' si nu altele pentru a nu da erori.
+	Switchul este pentru introduce tastele cu care se deplaseaza sarpele.	
+	
+
+
+
+
+
+---------> Am implementat toate cerintele si am testat tema .
+ 
+--------------> Din punctul meu de vedere , aceasta tema m-a ajutat foarte mult in a 
+--------------> folosi pointerii , de a lucra cu noile functii din bibloteca ncurses,
+--------------> si de a-mi dezvolta capacitatea de a lucra in C.
+
+--------------> Ca grad de dificultate de la 1-10( 10 cel mai greu) , dupa parerea mea
+--------------> tema aceasta e de dificultate 7 . Aceasta tema Snake fiind un joc
+--------------> a fost foarte placuta , fiind o dorinta de a mea sa fac un joc in limbaj
+--------------> de programare. Acesta joc va ramane mereu in amintirea mea , fiind primul
+--------------> joc ( in limbaj de programare) din viata mea.
+
