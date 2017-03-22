@@ -1,35 +1,29 @@
-Programarea Calculatoarelor, seria CC
-Tema2 - Snake
 
-STUDENT : Gogea Mihail 314 CC
+
+ Titlu proiect : Snake
+
+STUDENT : Gogea Mihail
 Pentru compilare: make
 Pentru rulare: make run
 
 ---------------------> README
 
 
----------> Tema : Tema 2 SNAKE   Programarea Calculatoarelor 2014-2015
+--------->  SNAKE 
 
 ---------> Autor : GOGEA MIHAIL
-
----------> Grupa : 314 
-
----------> Seria : CC
 
 ---------> Timp de rezolvare a programului : 18-20 ore
 
 ---------> Adresa de email : gogeaa712@yahoo.com 
 
----------> Titlul temei : SNAKE
+---------> Titlul : SNAKE
 
 -----------> IMPORTANT! : Programul Snake a fost implementat cu ajutorul
 			 editorului vim , pe sistemul de operare Linux
 			 UBUNTU 14 .
 			  Ca jocul sa fie vizualizat complet trebuie ca terminalul
 			 sa fie maximizat.
-			  Am introdus toate bucatile de program din folderul
-			 EXEMPLE in programul meu Snake , asa cum a fost precizat
-			 in enuntul temei, pornind de la snake.c .
 
 -----------> Bonusuri:
 		- Meniul principal prin care playerul poate sa aleaga daca doreste
@@ -44,10 +38,6 @@ Pentru rulare: make run
 		 de vizualizat care e capul sarpelui pe unde se deplaseaza.
 		- Am introdus simboluri si caractere speciale(NCURSES) pentru a desena
 		 marginea jocului , mancarea(DIAMOND) si pentru a desena sarpele.
-
----------------> Am implementat toate cerintele din enunt si am testat programul.
-		
-                
 
 ---------------> Descriere a codului sursa a programului snake.c :
 
@@ -98,20 +88,4 @@ sa ii fie aratat playerului scorul sau.
 'w a s d q ' si nu altele pentru a nu da erori.
 	Switchul este pentru introduce tastele cu care se deplaseaza sarpele.	
 	
-
-
-
-
-
----------> Am implementat toate cerintele si am testat tema .
- 
---------------> Din punctul meu de vedere , aceasta tema m-a ajutat foarte mult in a 
---------------> folosi pointerii , de a lucra cu noile functii din bibloteca ncurses,
---------------> si de a-mi dezvolta capacitatea de a lucra in C.
-
---------------> Ca grad de dificultate de la 1-10( 10 cel mai greu) , dupa parerea mea
---------------> tema aceasta e de dificultate 7 . Aceasta tema Snake fiind un joc
---------------> a fost foarte placuta , fiind o dorinta de a mea sa fac un joc in limbaj
---------------> de programare. Acesta joc va ramane mereu in amintirea mea , fiind primul
---------------> joc ( in limbaj de programare) din viata mea.
 
